@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220709 10:55:47.259" rpa="false" schemaversion="3">
+<suite id="s1" name="acceptance test F3.2" source="D:\aceptance-test\atrfrecognize\robot\acceptance_test_F3.2.robot">
+<test id="s1-t1" name="No Camera Started" line="29">
+<kw name="Verify Test Case 1" library="Keywords">
+<arg>${DIC_PARAMETERS_TC1}[probability]</arg>
+<arg>${DIC_PARAMETERS_TC1}[name]</arg>
+<doc>Camera of device was not started.</doc>
+<kw name="Camera No Started" library="RecognizeLibrary">
+<arg>${probability}</arg>
+<arg>${name}</arg>
+<msg timestamp="20220709 10:55:47.754" level="INFO">Test case 1 tested with probability of 0.000000</msg>
+<status status="PASS" starttime="20220709 10:55:47.752" endtime="20220709 10:55:47.797"/>
+</kw>
+<kw name="Check Camera No Started" library="RecognizeLibrary">
+<arg>cp1</arg>
+<status status="PASS" starttime="20220709 10:55:47.797" endtime="20220709 10:55:47.798"/>
+</kw>
+<status status="PASS" starttime="20220709 10:55:47.752" endtime="20220709 10:55:47.798"/>
+</kw>
+<doc>As an user I should known when camera was not started.</doc>
+<tag>6668</tag>
+<tag>Functionality 3.2 Recognize</tag>
+<tag>owner-willy_romero</tag>
+<status status="PASS" starttime="20220709 10:55:47.751" endtime="20220709 10:55:47.798"/>
+</test>
+<test id="s1-t2" name="Unrecognized Face" line="32">
+<kw name="Verify Test Case 2" library="Keywords">
+<arg>${DIC_PARAMETERS_TC2}[probability]</arg>
+<arg>${DIC_PARAMETERS_TC2}[name]</arg>
+<doc>The person scanned was unrecognized.</doc>
+<kw name="Unrecognized Face" library="RecognizeLibrary">
+<arg>${probability}</arg>
+<arg>${name}</arg>
+<msg timestamp="20220709 10:55:47.802" level="INFO">Test case 2 tested with probability of 70.000000</msg>
+<msg timestamp="20220709 10:55:50.061" level="INFO">prob    70
+message received with    No es la persona registrada</msg>
+<status status="PASS" starttime="20220709 10:55:47.801" endtime="20220709 10:55:50.061"/>
+</kw>
+<kw name="Check Unrecognized Face" library="RecognizeLibrary">
+<arg>cp2</arg>
+<status status="PASS" starttime="20220709 10:55:50.062" endtime="20220709 10:55:50.063"/>
+</kw>
+<status status="PASS" starttime="20220709 10:55:47.801" endtime="20220709 10:55:50.066"/>
+</kw>
+<doc>As an user I must see the message "Desconocido" when I wasn't recognized.</doc>
+<tag>6668</tag>
+<tag>Functionality 3.2 Recognize</tag>
+<tag>owner-willy_romero</tag>
+<status status="PASS" starttime="20220709 10:55:47.800" endtime="20220709 10:55:50.068"/>
+</test>
+<test id="s1-t3" name="Recognized Face" line="35">
+<kw name="Verify Test Case 3" library="Keywords">
+<arg>${DIC_PARAMETERS_TC3}[probability]</arg>
+<arg>${DIC_PARAMETERS_TC3}[name]</arg>
+<doc>The person scanned was recognized.</doc>
+<kw name="Recognized Face" library="RecognizeLibrary">
+<arg>${probability}</arg>
+<arg>${name}</arg>
+<msg timestamp="20220709 10:55:50.072" level="INFO">Test case 3 tested with probability of 60.000000</msg>
+<msg timestamp="20220709 10:55:53.096" level="INFO">message received with    Persona detectada</msg>
+<status status="PASS" starttime="20220709 10:55:50.071" endtime="20220709 10:55:53.096"/>
+</kw>
+<kw name="Check Recognized Face" library="RecognizeLibrary">
+<arg>cp3</arg>
+<status status="PASS" starttime="20220709 10:55:53.096" endtime="20220709 10:55:53.097"/>
+</kw>
+<status status="PASS" starttime="20220709 10:55:50.071" endtime="20220709 10:55:53.097"/>
+</kw>
+<doc>As an user I must see a message whit me name when I was recognized.</doc>
+<tag>6668</tag>
+<tag>Functionality 3.2 Recognize</tag>
+<tag>owner-willy_romero</tag>
+<status status="PASS" starttime="20220709 10:55:50.070" endtime="20220709 10:55:53.099"/>
+</test>
+<test id="s1-t4" name="Unrecognized Face Key" line="38">
+<kw name="Verify Test Case 4" library="Keywords">
+<arg>${DIC_PARAMETERS_TC4}[probability]</arg>
+<arg>${DIC_PARAMETERS_TC4}[name]</arg>
+<doc>The person scanned was unrecognized and press key scape.</doc>
+<kw name="Unrecognized Face Key" library="RecognizeLibrary">
+<arg>${probability}</arg>
+<arg>${name}</arg>
+<msg timestamp="20220709 10:55:53.109" level="INFO">Test case 4 tested with probability of 70.000000</msg>
+<msg timestamp="20220709 10:55:58.061" level="INFO">message received with    No es la persona registrada</msg>
+<status status="PASS" starttime="20220709 10:55:53.107" endtime="20220709 10:55:58.061"/>
+</kw>
+<kw name="Check Unrecognized Face Key" library="RecognizeLibrary">
+<arg>cp4</arg>
+<status status="PASS" starttime="20220709 10:55:58.061" endtime="20220709 10:55:58.076"/>
+</kw>
+<status status="PASS" starttime="20220709 10:55:53.106" endtime="20220709 10:55:58.077"/>
+</kw>
+<doc>As an user I must see "Desconocido" message when I wasn't recognized and I should press key "escape".</doc>
+<tag>6668</tag>
+<tag>Functionality 3.2 Recognize</tag>
+<tag>owner-willy_romero</tag>
+<status status="PASS" starttime="20220709 10:55:53.102" endtime="20220709 10:55:58.082"/>
+</test>
+<test id="s1-t5" name="Recognized Face Key" line="41">
+<kw name="Verify Test Case 5" library="Keywords">
+<arg>${DIC_PARAMETERS_TC5}[probability]</arg>
+<arg>${DIC_PARAMETERS_TC5}[name]</arg>
+<doc>The person scanned was recognized and press key scape.</doc>
+<kw name="Recognized Face Key" library="RecognizeLibrary">
+<arg>${probability}</arg>
+<arg>${name}</arg>
+<msg timestamp="20220709 10:55:58.094" level="INFO">Test case 5 tested with probability of 60.000000</msg>
+<msg timestamp="20220709 10:56:04.178" level="INFO">message received with    Persona detectada</msg>
+<status status="PASS" starttime="20220709 10:55:58.093" endtime="20220709 10:56:04.178"/>
+</kw>
+<kw name="Check Recognized Face Key" library="RecognizeLibrary">
+<arg>cp5</arg>
+<status status="PASS" starttime="20220709 10:56:04.179" endtime="20220709 10:56:04.180"/>
+</kw>
+<status status="PASS" starttime="20220709 10:55:58.091" endtime="20220709 10:56:04.180"/>
+</kw>
+<doc>As an user I must see a message whit me name when I was recognized and I should press key "escape".</doc>
+<tag>6668</tag>
+<tag>Functionality 3.2 Recognize</tag>
+<tag>owner-willy_romero</tag>
+<status status="PASS" starttime="20220709 10:55:58.088" endtime="20220709 10:56:04.181"/>
+</test>
+<doc>This is test suite for acceptance test of functionality 3.2. Recognize
+Keywords are imported from resource file</doc>
+<meta name="Executed At">Local.</meta>
+<meta name="More Info">You can acces to the source code here:</meta>
+<meta name="Version">1.0.0</meta>
+<status status="PASS" starttime="20220709 10:55:47.259" endtime="20220709 10:56:04.183"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="5" fail="0" skip="0">6668</stat>
+<stat pass="5" fail="0" skip="0">Functionality 3.2 Recognize</stat>
+<stat pass="5" fail="0" skip="0">owner-willy_romero</stat>
+</tag>
+<suite>
+<stat pass="5" fail="0" skip="0" id="s1" name="acceptance test F3.2">acceptance test F3.2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
