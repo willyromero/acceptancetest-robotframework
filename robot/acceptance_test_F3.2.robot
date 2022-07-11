@@ -16,11 +16,11 @@
 | &{DIC_PARAMETERS_TC4}    | probability=70 | name=willy
 | &{DIC_PARAMETERS_TC5}    | probability=60 | name=willy
 
-| ${RQ1 F 3 2}             | As an user I should known when camera was not started.
-| ${RQ2 F 3 2}             | As an user I must see the message "Desconocido" when I wasn't recognized.
-| ${RQ3 F 3 2}             | As an user I must see a message whit me name when I was recognized.
-| ${RQ4 F 3 2}             | As an user I must see "Desconocido" message when I wasn't recognized and I should press key "escape".
-| ${RQ5 F 3 2}             | As an user I must see a message whit me name when I was recognized and I should press key "escape".
+| ${RQ1 F 3 2}             | Cuando la cámara no se active se envía un mensaje al servidor indicando que la cámara no fue activada.
+| ${RQ2 F 3 2}             | Como usuario debo ver la etiqueta "Desconocido" cuando no sea reconocido. 
+| ${RQ3 F 3 2}             | Como usuario debo ver la etiqueta con mi nombre cuando sea reconocido.
+| ${RQ4 F 3 2}             | Como usuario debo ver la etiqueta "Desconocido" cuando no sea reconocido, además el sistema debe permitirme presionar la tecla "escape" para terminar el reconocimiento.
+| ${RQ5 F 3 2}             | Como usuario debo ver la etiqueta con mi nombre cuando sea reconocido, además el sistema debe permitirme presionar la tecla "escape" para terminar el reconocimiento.
 
 | ${HOST}                  | Local.
 

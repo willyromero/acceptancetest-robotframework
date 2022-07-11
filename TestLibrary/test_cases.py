@@ -16,7 +16,6 @@ def test_case_1(probability, name):
 
 def test_case_2(probability, name):
     cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
-    print("prob   ", probability)
     faceClassif = cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
     socket.connect("http://localhost:3000/")
     response = rf2.recognize(int(probability), cap, faceClassif, socket, name)

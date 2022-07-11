@@ -8,7 +8,7 @@ def recognize(face_recognizer, cap, faceClassif, socket,imagePaths):
         ret,frame = cap.read()
         if ret == False: 
             resp = "cp1"
-            socket.emit('rv', {'response': 'camera was not started'})
+            socket.emit('rv', {'response': 'Cámara no iniciada'})
             break
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         auxFrame = gray.copy()
